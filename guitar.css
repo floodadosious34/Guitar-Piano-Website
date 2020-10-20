@@ -1,0 +1,199 @@
+* { 
+    box-sizing: border-box;
+  }
+    
+
+header {
+    /* color:white; */
+    display: flex;
+    justify-content: left;
+    /* font-family: "Source Sans Pro", sans-serif; */
+    color: rgba(236, 227, 227, 0.8);
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    font-kerning: normal;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    background: url('img/Flood Tuning_-41.jpg') no-repeat top center ;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body {
+    /* color: #fff;
+    font-size: 1em;
+    font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 0em;
+    background-color: #42b4d6;
+    padding-bottom: 1em;
+    border: 1px;
+    margin-top: 0em; */
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    /* background: #f7f5f0; */
+  }
+
+.intro {
+    /* border-width: 5px;
+    border-color: blue;
+    background-color: crimson; */
+}
+
+nav ul {
+    display: flexbox;
+    position: relative;
+    right: 10em;
+    justify-content: right;
+    font-family: futura;
+}
+
+/* img {
+    max-width: 100%;
+    height: 40em;
+} */
+
+.tuning {
+    width: 100%; 
+    height: 9em; 
+    object-fit: cover;
+    object-position: bottom;
+    padding-top: 0px; 
+    
+    /* width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center; */
+    
+    
+}
+
+.tuning img {
+    width: 100%; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 110% 80%; /* try 20% 10% */ 
+  
+   
+}
+
+.mainpic img {
+    width: 50%; 
+    height: 18em; 
+    object-fit: cover;
+    object-position: 200% 70%;
+    padding-top: 0px; 
+    border-radius: 60%;
+}
+
+.contact {
+    padding: 25px;
+}
+
+h2 {
+    padding: 5px;
+    border: 5px;
+}
+
+/* Practice Button Nav code */
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 5em;
+    border-radius: 50%;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: fixed;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+
+  /* Change color of dropdown links on hover */
+  @media screen and (min-width: 720px) {
+  
+
+  
+  }
+  
+  
