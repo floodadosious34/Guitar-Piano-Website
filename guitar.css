@@ -9,7 +9,7 @@ header {
     justify-content: left;
     /* font-family: "Source Sans Pro", sans-serif; */
     color: rgba(236, 227, 227, 0.8);
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "futura", sans-serif;
     font-weight: normal;
     overflow-wrap: break-word;
     font-kerning: normal;
@@ -43,12 +43,13 @@ body {
     background-color: crimson; */
 }
 
-nav ul {
+ul {
     display: flexbox;
     position: relative;
     right: 10em;
     justify-content: right;
-    font-family: futura;
+    font-family: 'futura', sans-serif;
+    padding-left: 0em;
 }
 
 /* img {
@@ -58,7 +59,7 @@ nav ul {
 
 .tuning {
     width: 100%; 
-    height: 9em; 
+    height: 7em; 
     object-fit: cover;
     object-position: bottom;
     padding-top: 0px; 
@@ -147,15 +148,18 @@ h2 {
 
 /* Dropdown Button */
 .dropbtn {
+    position: absolute;
+    display: inline-block;
     background-color: #3498DB;
     color: white;
     padding: 16px;
+    margin-top: 3px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    position: relative;
     right: 5em;
     border-radius: 50%;
+    border: 2px solid #c5c5c5;
   }
   
   /* Dropdown button on hover & focus */
@@ -194,7 +198,7 @@ h2 {
   .show {display:block;}
   
 
-  /* Change color of dropdown links on hover */
+  /* Media Queries */
   @media screen and (min-width: 720px) {
   
 
