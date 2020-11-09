@@ -40,7 +40,8 @@
     object-position: 110% 80%;   
 }
 
-p {
+p,
+h2 {
     text-align: center;
 }
 
