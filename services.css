@@ -47,7 +47,7 @@ p {
     font-weight: bold;
     overflow-wrap: break-word;
     font-feature-settings: "kern", "liga", "clig", "calt";
-    background: url('img/Flood Tuning_-41.jpg') no-repeat top center ;
+    background: url('../img/Flood Tuning_-41.jpg') no-repeat top center ;
     background-size: auto;
     overflow: hidden;
 }
