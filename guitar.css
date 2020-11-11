@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   }
 
-.row {
+.theme {
   flex: 1;
   }
 
@@ -28,6 +28,13 @@ a {
 
 h2 {
   margin-top: 0;
+  font-family: "futura", sans-serif;
+  font-weight: bold;
+  
+}
+
+img {
+  max-width: 100%;
 }
 
 .tuning {
@@ -65,8 +72,8 @@ h2 {
   background: url('img/Flood Tuning_-41.jpg') no-repeat top center ;
   /* background-size: auto; */
   /* overflow: hidden; */
-  padding: 1.8em 0;
-  margin-bottom: 32px;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
 }
 .name {
 	font-size: 1.35em;
@@ -104,14 +111,13 @@ h2 {
     padding-right: 50px;
 } */
 
-.img2 {
+/* img {
     width: 60%; 
-    height: 18em;
-    object-position: center;
+    height: 25em;
     padding-top: 0px; 
-    border-radius: 50%;
+    border-radius: 5px;
     margin-left: 100px;
-}
+} */
 
 .main-footer {
     text-align: center;
@@ -121,15 +127,31 @@ h2 {
     margin-top: 30px;
   }
 
+  .col {
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: center;
+  }
+
+ .feat-img {
+    display: block;
+  }
+
 /* ================================= 
   Media Queries
 ==================================== */
+@media (max-width: 769px) {
+  .feat-img {
+      display: none;
+  }
+}
 
 @media (min-width: 769px) {
     
-  .main-header {
+  .main-header,
+  .theme {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   }
   
   /* .name  {
@@ -137,17 +159,27 @@ h2 {
       text-align: center;
   } */
   .main-header, 
-  .main-nav {
+  .main-nav,
+  .theme {
       display: flex;
   }
   .main-header {
   flex-direction: column;
   align-items: center;
 }
+
+.col {
+  flex: 1 50%;
+}
+
+.theme {
+  flex-wrap: wrap;
+}
+
+.secondary {
+  order: -1;
+}
   
-.img2 {
-  float: left; 
-  }
 
   /* .clearfix::before {
       content: "";
@@ -165,6 +197,14 @@ h2 {
 .main-header {
   flex-direction: row;
   justify-content: space-between;
+}
+
+.col {
+  flex-basis: 0;
+}
+
+.primary col {
+  flex-grow: 1.4;
 }
 
 }
