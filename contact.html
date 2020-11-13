@@ -3,9 +3,10 @@
   
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flood Guitar Study</title>
-    <!-- <link rel="stylesheet" type="text/css" href="../guitar.css"> -->
-    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="guitar.css">
+    <!-- <link rel="stylesheet" type="text/css" href="contact.css"> -->
   </head>
 
   <body>
@@ -24,48 +25,48 @@
             </ul>
       </header>
 
-        <section class="theme">
-          <h2>CONTACT</h2>
-          <!-- <img class="img2" src="../img/Flood Tuning_.jpg" alt="James Sitting next to Piano" title="James sitting at piano"> -->
+      <div class="form1">
+        <h2>CONTACT</h2>
+        <!-- <img class="img2" src="../img/Flood Tuning_.jpg" alt="James Sitting next to Piano" title="James sitting at piano"> -->
+        
+        <form onsubmit="return false">
+          <h1>Contact</h1>
           
-          <form onsubmit="return false">
-            <h1>Contact</h1>
+          <fieldset>
             
-            <fieldset>
-              
-              <!-- <legend><span class="number">1</span> Your basic info</legend> -->
-              
-              <!-- <label for="name">Name:</label> -->
-              <input type="text" id="firstName" name="user_firstname" placeholder="First Name">
-              <input type="text" id="lastName" name="user_lastname" placeholder="Last Name">
-              
-              <!-- <label for="mail">Email:</label> -->
-              <input type="email" id="email" name="user_email" placeholder="Email">
-              
-              <label for="phone">Phone:</label>
-              <input type="phone" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx">
-              
-              <label for="bio">Comments:</label>
-              <textarea id="bio" name="user_bio"></textarea>
-              
-            </fieldset>
-              
-            <button type="submit" onclick="submitForm();">Sign Up</button>
+            <!-- <legend><span class="number">1</span> Your basic info</legend> -->
             
-          </form>
-        </section>
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="firstName" name="user_firstname" placeholder="First Name">
+            <input type="text" id="lastName" name="user_lastname" placeholder="Last Name">
+            
+            <!-- <label for="mail">Email:</label> -->
+            <input type="email" id="email" name="user_email" placeholder="Email">
+            
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx">
+            
+            <label for="bio">Comments:</label>
+            <textarea id="bio" name="user_bio"></textarea>
+            
+          </fieldset>
+            
+          <button type="submit" onclick="submitForm();">Sign Up</button>
+          
+        </form>
+      </div>
 
-        <section class="row">
-          <p><strong>Email:</strong><a href="mailto:floodguitarstudy@gmsil.com?subject=Hello">floodguitarstudy@gmail.com</a></p>
-          <address>
-            Flood Guitar Study<br>
-            Louisville, KY 40299
-          </address>
-        </section>
+      <div class="third col">
+        <p><strong>Email:</strong><a href="mailto:floodguitarstudy@gmsil.com?subject=Hello">floodguitarstudy@gmail.com</a></p>
+        <address>
+          Flood Guitar Study<br>
+          Louisville, KY 40299
+        </address>
+      </div>
 
-      <footer class="main-footer">
-        <p>&copy;2020 Flood Guitar Study</p>
-      </footer>
+    <footer class="main-footer">
+      <p>&copy;2020 Flood Guitar Study</p>
+    </footer>
 
   </body>
 </html>
