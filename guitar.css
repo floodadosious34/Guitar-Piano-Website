@@ -98,6 +98,10 @@ h2 {
 	color: #093a58;
 }
 
+.services {
+  display: block;
+}
+
 form {
   max-width: 300px;
   margin: 10px auto;
@@ -201,12 +205,24 @@ button {
   } */
   .main-header, 
   .main-nav,
-  .theme {
+  .theme,
+  .services {
       display: flex;
   }
   .main-header {
   flex-direction: column;
   align-items: center;
+}
+
+.services {
+  flex-direction: block;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+}
+
+.services h3 {
+  padding-right: 10px;
 }
 
 .col {

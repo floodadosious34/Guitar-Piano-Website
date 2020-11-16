@@ -16,6 +16,19 @@
 //     }
 //   }
 // }
+
+// function validateform(){  
+//   var name=document.myform.firstName.value;   
+    
+//   if (name==null || name==""){  
+//     alert("Name can't be blank");  
+//     return false;  
+//   } 
+//   }  
+
+
+
+// This is the JS for my contact form, it validates the email using the regex funtion.
 var fields = {};
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -79,4 +92,47 @@ function submitForm() {
     alert("There was an error!")
   }
 }
+
+
+// This is the code for my JS feature for creating a object with an array, and passing info into it
+const services = [
+  {
+    service: 'Tuning',
+    duration: '2hrs',
+    cost: '$150',
+    frequecy: 'once a year'
+  },
+  {
+    service: 'Pitch Raise',
+    duration: '30min',
+    cost: '$75',
+    frequecy: 'Piano not tuned for over 4yrs'
+  },
+  {
+    service: 'Regulation',
+    duration: '5hrs',
+    cost: '$450',
+    frequecy: 'Once every 10yrs'
+  },
+  {
+    service: 'Voicing',
+    duration: '3hrs',
+    cost: '$300',
+    frequecy: 'Once every 5yrs'
+  }
+];
+const main = document.querySelector('main');
+let html = '';
+
+for ( let i = 0; i < services.length; i++ ) {
+  let service = services[i];
+    html += `
+      <h2>${service.service}</h2>
+      <h3>Duration: ${service.duration}</h3>
+      <h3>Cost: ${service.cost}</h3>
+      <h3>Frequecy: ${service.frequecy}</h3>
+    `;
+}
+
+main.insertAdjacentHTML('beforeend', html);
 
