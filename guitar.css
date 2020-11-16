@@ -5,7 +5,6 @@
 
 body {
   margin: 0;
-  /* padding: 0; */
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -63,15 +62,11 @@ h2 {
 
 .main-header {
   display: block;
-  /* justify-content: left; */
   color: rgba(236, 227, 227, 0.8);
   font-family: "futura", sans-serif;
   font-weight: bold;
-  /* overflow-wrap: break-word; */
   font-feature-settings: "kern", "liga", "clig", "calt";
   background: url('img/Flood Tuning_-41.jpg') no-repeat top center ;
-  /* background-size: auto; */
-  /* overflow: hidden; */
   padding: 3.2em 0;
   margin-bottom: 48px;
 }
@@ -150,20 +145,6 @@ button {
 	padding-bottom: .5em;
 }
 
-/* .name {
-    width: 500px;
-    padding-top: 10px;
-    padding-right: 50px;
-} */
-
-/* img {
-    width: 60%; 
-    height: 25em;
-    padding-top: 0px; 
-    border-radius: 5px;
-    margin-left: 100px;
-} */
-
 .main-footer {
     text-align: center;
     padding: 2em 0;
@@ -196,13 +177,8 @@ button {
   .main-header,
   .theme {
   width: 100%;
-  /* margin: 0 auto; */
   }
   
-  /* .name  {
-      padding-left: 2em;
-      text-align: center;
-  } */
   .main-header, 
   .main-nav,
   .theme,
