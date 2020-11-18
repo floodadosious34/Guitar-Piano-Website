@@ -89,7 +89,7 @@ function submitForm() {
     alert(`${usr.firstName} thanks for submitting.`)
 
   } else {
-    alert("There was an error!")
+    alert(`Please fill in form correctly!`)
   }
 }
 
@@ -127,10 +127,10 @@ let html = '';
 for ( let i = 0; i < services.length; i++ ) {
   let service = services[i];
     html += `
-      <h2>${service.service}</h2>
+      <div class="servicesBlock"><h2>${service.service}</h2>
       <h3>Duration: ${service.duration}</h3>
       <h3>Cost: ${service.cost}</h3>
-      <h3>Frequecy: ${service.frequecy}</h3>
+      <h3>Frequecy: ${service.frequecy}</h3></div>
     `;
 }
 
