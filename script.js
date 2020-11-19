@@ -70,25 +70,25 @@ const services = [
     service: 'Tuning',
     duration: '2hrs',
     cost: '$150',
-    frequecy: 'once a year'
+    frequency: 'once a year'
   },
   {
     service: 'Pitch Raise',
     duration: '30min',
     cost: '$75',
-    frequecy: 'Piano not tuned for over 4yrs'
+    frequency: 'Piano not tuned for over 4yrs'
   },
   {
     service: 'Regulation',
     duration: '5hrs',
     cost: '$450',
-    frequecy: 'Once every 10yrs'
+    frequency: 'Once every 10yrs'
   },
   {
     service: 'Voicing',
     duration: '3hrs',
     cost: '$300',
-    frequecy: 'Once every 5yrs'
+    frequency: 'Once every 5yrs'
   }
 ];
 const main = document.querySelector('main');
@@ -100,7 +100,7 @@ for ( let i = 0; i < services.length; i++ ) {
       <div class="servicesBlock"><h2>${service.service}</h2>
       <h3>Duration: ${service.duration}</h3>
       <h3>Cost: ${service.cost}</h3>
-      <h3>Frequecy: ${service.frequecy}</h3></div>
+      <h3>Frequecy: ${service.frequency}</h3></div>
     `;
 }
 
