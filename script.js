@@ -100,7 +100,7 @@ for ( let i = 0; i < services.length; i++ ) {
       <div class="servicesBlock"><h2>${service.service}</h2>
       <h3>Duration: ${service.duration}</h3>
       <h3>Cost: ${service.cost}</h3>
-      <h3>Frequecy: ${service.frequency}</h3></div>
+      <h3>Frequency: ${service.frequency}</h3></div>
     `;
 }
 
