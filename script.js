@@ -1,34 +1,4 @@
-/* toggle between hiding and showing the dropdown content */
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
-
-// function validateform(){  
-//   var name=document.myform.firstName.value;   
-    
-//   if (name==null || name==""){  
-//     alert("Name can't be blank");  
-//     return false;  
-//   } 
-//   }  
-
-
-
-// This is the JS for my contact form, it validates the email using the regex funtion.
+// Java script for contact form, fields list to take input
 var fields = {};
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -37,16 +7,16 @@ document.addEventListener("DOMContentLoaded", function() {
   fields.email = document.getElementById('email');
   fields.phone = document.getElementById('phone');
  })
-
+// Checking that field is not left empty
  function isNotEmpty(value) {
   if (value == null || typeof value == 'undefined' ) return false;
   return (value.length > 0);
  }
-
+// checking that the number field is more than 0 and a number
  function isNumber(num) {
   return (num.length > 0) && !isNaN(num);
  }
-
+// Used regex i found onlinwe to validate email
  function isEmail(email) {
    let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
    return regex.test(String(email).toLowerCase());
@@ -81,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
   this.email = email;
   }
  }
-
+// function that runs in onsubmit, gives alert using first name value inputed by user
 function submitForm() {
   if (isValid()) {
     let usr = new User(firstName.value, lastName.value, email.value);
@@ -123,7 +93,7 @@ const services = [
 ];
 const main = document.querySelector('main');
 let html = '';
-
+// Added class servicesBlock to style h3 and h2's
 for ( let i = 0; i < services.length; i++ ) {
   let service = services[i];
     html += `
